@@ -1,1 +1,1 @@
-# Eesti-keelse-teksti-hindamine-p-hinedes-s-navara-mitmekesisusele
+# Eesti-keelse-teksti-hindamine-p6hinedes-s6navara-mitmekesisusele
