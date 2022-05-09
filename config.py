@@ -1,4 +1,4 @@
-kataloog = 'C:/algoritm//Python/korpus/test' #pange siia sisse oma b1 korpuse tekstid
+kataloog = 'C:/algoritm//Python/korpus/test' #pange siia sisse oma töödeldav tekst
 minukaust = 'C:/algoritm//Python/output'#võite teha kataloogi, ja sinna läheb töödeldud tekst
 tekstide_arv = 17
 indeksid = 'C:/algoritm/indeksid'
