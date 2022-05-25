@@ -151,10 +151,9 @@ def analyzeText(textTyyp):
             print("[JLSS: {}]".format(JLSS))    
             print("[MTLD: {}]".format(MTLD))
         else:
-            print("[MAAS: {}]".format(MAAS))
-            print("[UBER: {}]".format(UBER))
+            print("[MTLD: {}]".format(MTLD))
             print("[HDD: {}]".format(HDD))
-            print("[MSTTR: {}]".format(MSTTR))
+            
 
 
     ResultArray = []
@@ -244,15 +243,11 @@ def analyzeText(textTyyp):
             print("[MTLD: {}]".format(ResultArray[j].MTLD))
             print("[MTLD_d: {}]".format(ResultArray[j].MTLD_d))
         else:
-            #korpus
-            print("[MAAS: {}]".format(ResultArray[j].MAAS))
-            print("[MAAS_d: {}]".format(ResultArray[j].MAAS_d))
-            print("[UBER: {}]".format(ResultArray[j].UBER))    
-            print("[UBER_d: {}]".format(ResultArray[j].UBER_d))           
+            #korpus          
             print("[HDD: {}]".format(ResultArray[j].HDD))
             print("[HDD_d: {}]".format(ResultArray[j].HDD_d))
-            print("[MSTTR: {}]".format(ResultArray[j].MSTTR))
-            print("[MSTTR_d: {}]".format(ResultArray[j].MSTTR_d))
+            print("[MTLD: {}]".format(ResultArray[j].MTLD))
+            print("[MTLD_d: {}]".format(ResultArray[j].MTLD_d))
         print ("")
 
     print ("Kokkuvõte:") 
@@ -269,17 +264,14 @@ def analyzeText(textTyyp):
         print ("MTLD järgi teksti tase: " + ResultArray[0].txtLevel)
     else:
         #korpus
-        ResultArray.sort(key=lambda x: x.MAAS_d, reverse=False)
-        print ("MAAS järgi teksti tase: " + ResultArray[0].txtLevel)
 
         ResultArray.sort(key=lambda x: x.HDD_d, reverse=False)
         print ("HDD järgi teksti tase: " + ResultArray[0].txtLevel)
 
-        ResultArray.sort(key=lambda x: x.UBER_d, reverse=False)
-        print ("UBER järgi teksti tase: " + ResultArray[0].txtLevel)
+        ResultArray.sort(key=lambda x: x.MTLD_d, reverse=False)
+        print ("MTLD järgi teksti tase: " + ResultArray[0].txtLevel)
 
-        ResultArray.sort(key=lambda x: x.MSTTR_d, reverse=False)
-        print ("MSTTR järgi teksti tase: " + ResultArray[0].txtLevel)
+        
 
 
 
