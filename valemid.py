@@ -87,20 +87,20 @@ def safe_divide(numerator, denominator):
 def msttr(text, window_length = 50):
 
 	if len(text) < (window_length + 1):
-		ms_ttr = safe_divide(len(set(text)), len(text))
+		ms_ttr = safe_divide(len(set(text)),len(text))
 
 	else:
 		sum_ttr = 0
 		denom = 0
 
-		n_segments = int(safe_divide(len(text), window_length))
+		n_segments = int(safe_divide(len(text),window_length))
 		seed = 0
 		for x in range(n_segments):
 			sub_text = text[seed:seed+window_length]
 			#print sub_text
-			sum_ttr = sum_ttr + safe_divide(len(set(sub_text)), len(sub_text))
-			denom = denom + 1
-			seed = seed + window_length
+			sum_ttr += safe_divide(len(set(sub_text)), len(sub_text))
+			denom+=1
+			seed+=window_length
 
 		ms_ttr = safe_divide(sum_ttr, denom)
 
